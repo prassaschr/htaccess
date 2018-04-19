@@ -1,0 +1,10 @@
+#Apache 2.4
+AuthName "Authenticate"
+AuthType Basic
+AuthUserFile "/var/www/html/.htpasswd"
+#ErrorDocument 403 /var/www/html/403.html
+<RequireAny>
+   Require valid-user
+   Require ip XXX.XXX.XXX.XXX/XX
+   Require ip XXX.XXX.XXX.XXX/XX
+</RequireAny>
